@@ -1,0 +1,75 @@
+@import "../../global.scss";
+
+.contact {
+    
+    h4 {
+    font-weight: 520;
+    display: block;
+    color: white;
+    background-color: black;
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+  
+    @include mobile {
+      font-size: 2vh;
+    }
+  
+    .container{
+      display: block;
+    }
+  }
+  
+  a img{
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 4vh;
+    height: 4vh;
+  }
+  
+  h1 {
+    margin: 40px;
+  }
+  
+  .contactForm {
+    background-color: lightgray;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .row{
+    margin: 10px;
+  }
+  
+  .submit-btn{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    border: none;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+  
+    @include mobile{
+      font-size: 2vh;
+    }
+  }
+  
+  footer{
+    font-size: 2vh;
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+}

@@ -1,0 +1,90 @@
+@import "../../global.scss";
+
+.portfolio {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1{
+    @include mobile {
+      font-size: 5vh;
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    li {
+      @include mobile {
+        font-size: 1.7vh;
+      }
+    }
+
+    @include mobile{
+      margin: 0;
+      display: block;
+      justify-content: center;
+    }
+  }
+
+  .container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include mobile{
+      width: 100%;
+    }
+
+    .item {
+      background-color: black;
+      width: 320px;
+      height: 320px;
+      border: 1px solid rgb(240, 239, 239);
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+      transition: all .5s ease;
+      cursor: pointer;
+
+      h3 {
+        font-family: "Poppins", sans-serif;;
+        position: absolute;
+        font-size: 3vh;
+        font-weight: 520;
+        letter-spacing: 0.1rem;
+        padding: 10px;
+
+        @include mobile{
+          margin: 4vh;
+        }
+      }
+
+      img {
+        background-color: black;
+        opacity: 0.4;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+      }
+
+      &:hover {
+
+        img {
+          opacity: 1;
+          z-index: 1;
+          transition: .5s ease;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../global.scss";
+
+.home {
+    margin-top: 20vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    height: 80vh;
+
+    h2 {
+        font-size: 30px;
+
+        @include mobile {
+            font-size: 3vh;
+        }
+    }
+
+    img {
+        animation: updown 3s linear infinite;
+        width: 85%;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        padding: 0.5%;
+        width: 200px;
+        border-width: 0.5rem;
+    }
+}

@@ -1,0 +1,57 @@
+@import "../../global.scss";
+
+.experience{
+
+    h1{
+      margin-top: 5vh;
+    }
+    div{
+      display: block;
+      align-items: center;
+      margin-left: 12vh;
+      margin-right: 12vh;
+      margin-bottom: 2vh;
+      background-color: lightgrey;
+  
+      @include mobile {
+        margin-left: 6vh;
+        margin-right: 6vh;
+        margin-bottom: 2vh;
+      }
+    }
+  
+    h2{
+      padding: 1%;
+      font-weight: bolder;
+      background: black;
+      color: white;
+  
+      @include mobile {
+        font-size: 3.5vh;
+        padding: 1.5vh;
+      }
+    }
+    h3{
+      font-size: 155%;
+      font-weight: bolder;
+      padding-top: 10px;
+  
+      @include mobile {
+        font-size: 2vh;
+        margin: 2vh;
+      }
+    }
+    p{
+      font-size: 125%;
+      padding-bottom: 20px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 10px;
+  
+      @include mobile {
+        font-size: 2vh;
+        margin: 3vh;
+      }
+    }
+  }
+  
